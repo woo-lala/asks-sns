@@ -9,7 +9,7 @@
 
         <nav th:fragment="before-login-header" class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">
+            <a class="navbar-brand ps-3" href="/">
                 <img src="/images/logo.png" th:src="@{/images/logo.png}" th:alt="logo" width="50" height="38"/>
             </a>
             <!-- Sidebar Toggle-->
@@ -23,8 +23,16 @@
             </form>
 
             <div class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <button type="button" class="btn btn-outline-primary me-2">로그인</button>
-                <button type="button" class="btn btn-primary">회원가입</button>
+                <button type="button" class="btn btn-outline-primary me-2"
+                        onclick="location.href='login.html'"
+                        th:onclick="|location.href='@{/login}'|">
+                    로그인
+                </button>
+                <button type="button" class="btn btn-primary"
+                        onclick="location.href='join.html'"
+                        th:onclick="|location.href='@{/join}'|">
+                    회원가입
+                </button>
             </div>
 
             <!-- Navbar-->
