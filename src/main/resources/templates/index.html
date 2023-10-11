@@ -10,9 +10,12 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
-    <div th:replace="~{navbar :: before-login-header}"></div>
+    <nav th:replace="~{navbar :: before-login-header}"></nav>
     <div id="layoutSidenav">
-        <div th:replace="~{sidebar :: sidebar}"></div>
+        <div id="layoutSidenav_nav">
+            <div th:replace="~{sidebar :: sidebar}"></div>
+        </div>
+
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
@@ -24,6 +27,7 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4">
                                 <div class="card-body">Primary Card</div>
+
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="#">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
