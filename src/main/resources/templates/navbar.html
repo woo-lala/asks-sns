@@ -6,7 +6,6 @@
               href="../static/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-
         <nav th:fragment="before-login-header" class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="/">
@@ -22,16 +21,11 @@
                 </div>
             </form>
 
-            <div class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <div class="navbar-nav ms-auto ms-md-0 me-3 me-lg-3">
                 <button type="button" class="btn btn-outline-primary me-2"
                         onclick="location.href='login.html'"
                         th:onclick="|location.href='@{/login}'|">
                     로그인
-                </button>
-                <button type="button" class="btn btn-primary"
-                        onclick="location.href='join.html'"
-                        th:onclick="|location.href='@{/join}'|">
-                    회원가입
                 </button>
             </div>
         </nav>
