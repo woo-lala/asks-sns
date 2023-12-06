@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Asks</title>
+    <link rel="icon" href="/images/logo.png" th:href="@{/images/logo.png}">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+<nav th:replace="~{navbar :: before-login-header}"></nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <div th:replace="~{sidebar :: sidebar}"></div>
+    </div>
+
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container px-4">
+                <h1 class="mt-4 mb-4 pb-2 border-bottom">프로필</h1>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card p-3">
+
+                            <div class="d-flex align-items-center">
+
+                                <div class="image">
+                                    <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/AgAC1Is.jpg" width="150" alt="profile_image">
+                                </div>
+
+                                <div class="ml-3 w-100">
+
+                                    <h4 class="mb-0 mt-0">Alex HMorrision</h4>
+                                    <span>Senior Journalist</span>
+
+                                    <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+
+                                        <div class="d-flex flex-column">
+
+                                            <span class="articles">Articles</span>
+                                            <span class="number1">38</span>
+
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+
+                                            <span class="followers">Followers</span>
+                                            <span class="number2">980</span>
+
+                                        </div>
+
+
+                                        <div class="d-flex flex-column">
+
+                                            <span class="rating">Rating</span>
+                                            <span class="number3">8.9</span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="button mt-2 d-flex flex-row align-items-center">
+
+                                        <button class="btn btn-sm btn-outline-primary w-100">Chat</button>
+                                        <button class="btn btn-sm btn-primary w-100 ml-2">Follow</button>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <div>
+                            <div class="pt-3">
+                                <div class="pt-3">
+                                    <span class="question">그런 홍경이 고유하게 좋아하는 이야기는</span>
+                                    <div class="d-flex justify-content-start pt-2">
+                                        <a href="/">
+                                            <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/AgAC1Is.jpg" width="18" alt="profile_image">
+                                            <span>Martha</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="pt-3">
+                                    <span class="answer">한강 작가를 정말 좋아해요. 요즘 〈내 여자의 열매〉를 읽는 중이에요. 폴 토머스 앤더슨의 영화 〈펀치 드렁크 러브〉를 좋아한다고 꾸준히 말해 왔는데, 이 영화에서 심리 상태가 불안정한 남자와 여자가 만나 사랑하거든요. 그 과정에서 발생하는 이상하고 기괴한 상황으로 인해 남자는 여자에게 자신의 약점을 털어놓죠. 인간은 좋아하는 사람 앞에서 못난 부분을 숨기고 잘난 면만 보여주고 싶어 하잖아요. 상대가 싫어할까 봐 숨기는 우리의 솔직한 면모가 현실적으로 잘 드러난 영화라고 생각해요. 불완전한 서로의 세계로 서로를 끌어들이고, 너도 완벽하지 않고 나도 완벽하지 않다는 걸 받아들이면서 마침내 사랑이 이뤄지는 순간이 영화에 나와요. 그 부분이 제게 큰 울림을 줬는데, 〈내 여자의 열매〉도 그런 이야기죠. 결함이 있는 두 사람이 만나 서로 결함을 채워주거든요.</span>
+                                    <div class="d-flex justify-content-start pt-2">
+                                        <a href="/">
+                                            <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/tPvlEdq.jpg" width="18" alt="profile_image">
+                                            <span>Curtis</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3">
+                                <div class="pt-3">
+                                    <span class="question">그런 홍경이 고유하게 좋아하는 이야기는</span>
+                                    <div class="d-flex justify-content-start pt-2">
+                                        <a href="/">
+                                            <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/AgAC1Is.jpg" width="18" alt="profile_image">
+                                            <span>Martha</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="pt-3">
+                                    <span class="answer">한강 작가를 정말 좋아해요. 요즘 〈내 여자의 열매〉를 읽는 중이에요. 폴 토머스 앤더슨의 영화 〈펀치 드렁크 러브〉를 좋아한다고 꾸준히 말해 왔는데, 이 영화에서 심리 상태가 불안정한 남자와 여자가 만나 사랑하거든요. 그 과정에서 발생하는 이상하고 기괴한 상황으로 인해 남자는 여자에게 자신의 약점을 털어놓죠. 인간은 좋아하는 사람 앞에서 못난 부분을 숨기고 잘난 면만 보여주고 싶어 하잖아요. 상대가 싫어할까 봐 숨기는 우리의 솔직한 면모가 현실적으로 잘 드러난 영화라고 생각해요. 불완전한 서로의 세계로 서로를 끌어들이고, 너도 완벽하지 않고 나도 완벽하지 않다는 걸 받아들이면서 마침내 사랑이 이뤄지는 순간이 영화에 나와요. 그 부분이 제게 큰 울림을 줬는데, 〈내 여자의 열매〉도 그런 이야기죠. 결함이 있는 두 사람이 만나 서로 결함을 채워주거든요.</span>
+                                    <div class="d-flex justify-content-start pt-2">
+                                        <a href="/">
+                                            <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/tPvlEdq.jpg" width="18" alt="profile_image">
+                                            <span>Curtis</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex flex-row mt-4 mb-4">
+                            <img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38">
+                            <input type="text" class="form-control ms-2 me-2 mr-3" placeholder="Add comment">
+                            <button class="btn btn-primary" type="button">Comment</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        <div th:replace="~{footer :: footer}"></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>

@@ -8,24 +8,39 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/main")
+    @GetMapping("/ask")
     public String main(){
-        return "main";
+        return "ask";
     }
 
-    @GetMapping("/message")
+
+
+    /**
+     * 임시
+     * @return
+     */
+
+    @GetMapping("/interviews")
+    public String interview(){
+        return "interviews";
+    }
+    @GetMapping("/profile")
+    public String profile(){
+        return "profile";
+    }
+    @GetMapping("/messages")
     public String message(){
-        return "main";
+        return "interviews";
     }
 
     @GetMapping("/alarm")
     public String alarm(){
-        return "main";
+        return "interviews";
     }
 
     @GetMapping("/setting")
     public String setting(){
-        return "main";
+        return "interviews";
     }
 
 }
