@@ -2504,6 +2504,7 @@ textarea.form-control-lg {
     align-items: stretch;
     width: 100%;
 }
+
 .input-group > .form-control, .input-group > .datatable-input,
 .input-group > .form-select,
 .input-group > .datatable-selector,
@@ -3622,9 +3623,9 @@ textarea.form-control-lg {
 }
 
 .nav {
-    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-x: 1.5rem;
     --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-font-weight: ;
+    --bs-nav-link-font-size: 1rem;
     --bs-nav-link-color: var(--bs-link-color);
     --bs-nav-link-hover-color: var(--bs-link-hover-color);
     --bs-nav-link-disabled-color: #6c757d;
@@ -11240,4 +11241,209 @@ body {
     width: 20px !important;
     font-size: 0.75rem;
     border-radius: 0.375rem !important;
+}
+
+.question {
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.answer {
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+.answer-background {
+    background : #e8f1f3;
+}
+
+/*.answer:before {*/
+/*    content: "A";*/
+/*    margin-right: 0.5rem;*/
+/*    font-size: 2rem;*/
+/*    font-family: Georgia, serif;*/
+/*    font-style: italic;*/
+/*    line-height: 1em;*/
+/*    font-weight: 400;*/
+/*}*/
+
+ul{
+    list-style:none;
+    padding-left:0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*ask.html*/
+
+.people-list {
+    max-height : 500px;
+    overflow: auto;
+}
+
+.people-list li {
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 3px
+}
+
+.people-list li:hover {
+    background: #efefef;
+    cursor: pointer
+}
+
+.people-list li.active {
+    background: #efefef
+}
+
+.people-list li .nickname {
+    font-size: 15px
+}
+
+.people-list img {
+    width: 45px;
+    border-radius: 50%
+}
+
+.people-list img {
+    float: left;
+    border-radius: 50%
+}
+
+.people-list .about {
+    float: left;
+    padding-left: 8px
+}
+
+.people-list .name {
+    color: #999;
+    font-size: 13px
+}
+
+.send img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.send img{
+    float: left;
+    border-radius: 50%;
+}
+
+.send .nickname{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.send .about {
+    float: left;
+    padding-left: 8px
+}
+
+.send .name{
+    color: #999;
+    font-size: 15px
+}
+
+/*answer.html*/
+
+.questions-list {
+    max-height : 500px;
+    overflow: auto;
+}
+
+.questions-list li {
+    padding: 10px 15px;
+    list-style: none;
+    border-radius: 3px
+}
+
+.questions-list li:hover {
+    background: #efefef;
+    cursor: pointer
+}
+
+.questions-list li.active {
+    background: #efefef
+}
+
+
+.questions-list li .questions {
+    font-size: 15px
+}
+
+.questions-list .about {
+    float: left;
+    padding-left: 8px
+}
+
+.questions-list .questions:before {
+    content: "Q";
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+@media only screen and (max-width: 767px) {
+    .chat-app .people-list {
+        height: 465px;
+        width: 100%;
+        overflow-x: auto;
+        background: #fff;
+        left: -400px;
+        display: none
+    }
+    .chat-app .people-list.open {
+        left: 0
+    }
+    .chat-app .chat {
+        margin: 0
+    }
+    .chat-app .chat .chat-header {
+        border-radius: 0.55rem 0.55rem 0 0
+    }
+    .chat-app .chat-history {
+        height: 300px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .chat-app .chat-list {
+        height: 650px;
+        overflow-x: auto
+    }
+    .chat-app .chat-history {
+        height: 600px;
+        overflow-x: auto
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .chat-app .chat-list {
+        height: 480px;
+        overflow-x: auto
+    }
+    .chat-app .chat-history {
+        height: calc(100vh - 350px);
+        overflow-x: auto
+    }
 }

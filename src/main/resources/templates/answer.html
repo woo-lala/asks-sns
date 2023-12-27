@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Asks</title>
+    <link rel="icon" href="/images/logo.png" th:href="@{/images/logo.png}">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <nav th:replace="~{navbar :: before-login-header}"></nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <div th:replace="~{sidebar :: sidebar}"></div>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4 mb-4 pb-2 border-bottom">답변하기</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card h-500">
+                                <div class="card-body questions-list">
+                                        <ul class="list-unstyled mt-2 mb-0">
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">심드렁한 어깨처럼 느껴졌어요. 언제든 툭 기댈 수 있는.</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions"> 정말요? 그런데 한준희 감독은 “교환이 형 그대로 있어주면 된다, 호열이는 그런 캐릭터다”라고 했는걸요.</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">그런 홍경이 고유하게 좋아하는 이야기는? </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">홍경에 대해 또 알아야 하는 새로운 면이 있다면?</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">내가 생각하는 ‘멋’이란?</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">도전하거나 성취해 내고 싶은 건?</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="about">
+                                                    <div class="questions">홍경이 가장 뜨거워지는 순간은?</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8 mb-4">
+                            <div class="card h-500">
+                                <div class="card-body questions-list">
+                                    <div class="ps-3 pt-3">
+                                        <div class="about">
+                                            <div class="d-flex justify-content-start pt-2 pb-2">
+                                                <a href="/profile" th:href="@{/profile}">
+                                                    <img class="img-fluid img-responsive rounded-circle me-1" src="https://i.imgur.com/AgAC1Is.jpg" width="30" alt="profile_image">
+                                                    <span>Martha</span>
+                                                </a>
+                                            </div>
+                                            <div class="questions">그런 홍경이 고유하게 좋아하는 이야기는</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row p-3">
+                                    <img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38">
+                                    <input type="text" class="form-control ms-2 me-2 mr-3" placeholder="Add comment">
+                                    <button class="btn btn-primary" type="button">Comment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card Two</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card Three</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <div th:replace="~{footer :: footer}"></div>
+        </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>
