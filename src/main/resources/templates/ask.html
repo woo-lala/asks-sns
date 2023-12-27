@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Asks</title>
+    <link rel="icon" href="/images/logo.png" th:href="@{/images/logo.png}">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <nav th:replace="~{navbar :: before-login-header}"></nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <div th:replace="~{sidebar :: sidebar}"></div>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4 mb-4 pb-2 border-bottom">질문하기</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="card h-500">
+                                <div class="people-list">
+                                    <form class="form-inline ms-auto me-0 me-md-3 my-2 my-md-0 pt-3 ps-3 pe-3 pb-1">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Search for.." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                                            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-body people-list">
+                                        <ul class="list-unstyled chat-list mt-2 mb-0">
+                                            <li class="clearfix">
+                                                <img src="https://i.imgur.com/AgAC1Is.jpg" alt="profile_image">
+                                                <div class="about">
+                                                    <div class="nickname">ma___dam
+                                                    </div>
+                                                    <div class="name">오아람</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix active">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nicknmae">ddangny.diary</div>
+                                                    <div class="name">강백호</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://i.imgur.com/AgAC1Is.jpg" alt="profile_image">
+                                                <div class="about">
+                                                    <div class="nickname">ma___dam
+                                                    </div>
+                                                    <div class="name">오아람</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nicknmae">ddangny.diary</div>
+                                                    <div class="name">강백호</div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nicknmae">Mike Thomas</div>
+                                                    <div class="name">online </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nickname">Christian Kelly</div>
+                                                    <div class="name">left 10 hours ago </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://i.imgur.com/AgAC1Is.jpg" alt="profile_image">
+                                                <div class="about">
+                                                    <div class="nickname">Vincent Porter</div>
+                                                    <div class="name"> left 7 mins ago </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nicknmae">Aiden Chavez</div>
+                                                    <div class="name"> online </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nicknmae">Mike Thomas</div>
+                                                    <div class="name">online </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
+                                                <div class="about">
+                                                    <div class="nickname">Christian Kelly</div>
+                                                    <div class="name">left 10 hours ago </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8 mb-4">
+                            <div class="card h-500">
+                                <div class="card-body send">
+                                    <div class="ps-3 pt-3">
+                                        <img src="https://i.imgur.com/AgAC1Is.jpg" alt="profile_image">
+                                        <div class="about">
+                                            <div class="nickname">asks_id</div>
+                                            <div class="name">nickname or real name</div>
+
+                                            <div class="d-flex justify-content-start mt-2 mb-2">
+                                                <div class="d-flex flex-column justify-content-center text-center">
+                                                    <span class="questions">Questions</span>
+                                                    <span class="questions-number">38</span>
+                                                </div>
+
+                                                <div class="d-flex flex-column ps-3 justify-content-center text-center">
+                                                    <span class="answers">Answers</span>
+                                                    <span class="answers-number">980</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row p-3">
+                                    <img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38">
+                                    <input type="text" class="form-control ms-2 me-2 mr-3" placeholder="Add comment">
+                                    <button class="btn btn-primary" type="button">Comment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card One</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="/interviews.html" th:href="@{/interviews}">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card Two</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h2 class="card-title">Card Three</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <div th:replace="~{footer :: footer}"></div>
+        </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+<script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>

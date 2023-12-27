@@ -9,10 +9,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping("/ask")
-    public String main(){
+    public String ask(){
         return "ask";
     }
 
+    @GetMapping("/answer")
+    public String answer(){
+        return "answer";
+    }
+
+    @GetMapping("/main")
+    public String main(){
+        return "main";
+    }
 
 
     /**
